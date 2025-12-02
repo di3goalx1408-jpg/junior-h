@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Junior H - Página Completa</title>
+<style>
+body{margin:0;padding:0;font-family:'Arial',sans-serif;color:#ffd8a6;background:black;overflow-y:scroll;overflow-x:hidden;display:flex;justify-content:center;}
+.contenedor-principal{width:1200px;}
+.titulo-neon{font-family:"Times New Roman",cursive;font-size:80px;text-align:center;margin:20px 0 0 0;font-weight:bold;background:linear-gradient(270deg,#ff0055,#00ffdd,#ffdd00,#ff0055);background-size:800% 800%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradiente 8s ease infinite,neonVibrar 2.5s infinite alternate,pulsar 2s infinite alternate;text-shadow:0 0 5px #fff,0 0 10px #ff00ff,0 0 20px #00ffff,0 0 30px #ff00ff,0 0 40px #00ffff,0 0 50px #ff00ff;}
+@keyframes gradiente{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes neonVibrar{0%,100%{text-shadow:0 0 5px #fff,0 0 10px #ff00ff,0 0 20px #00ffff,0 0 30px #ff00ff,0 0 40px #00ffff,0 0 50px #ff00ff}50%{text-shadow:0 0 10px #fff,0 0 20px #ff00ff,0 0 40px #00ffff,0 0 60px #ff00ff,0 0 80px #00ffff,0 0 100px #ff00ff}}
+@keyframes pulsar{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+.top-section{width:1200px;height:200px;position:relative;text-align:center;}
+.logo{width:130px;height:130px;position:absolute;top:35px;left:20px;border-radius:15px;}
+.gif-movimiento{width:320px;height:320px;position:absolute;top:0px;right:20px;}
+.imagen-abajo-nombre{display:block;margin:0 auto;width:400px;height:auto;}
+.contenedor{width:1200px;padding:40px;background:rgba(0,0,0,0.85);position:relative;margin-top:220px;}
+.video-local{width:960px;height:540px;display:block;margin:40px auto;border-radius:15px;background:black;}
+p{line-height:1.8;margin-top:30px;font-size:18px;color:#ffd8a6;}
+.albumes{width:1100px;margin:50px auto;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:20px;}
+.album{width:180px;height:180px;border-radius:10px;overflow:hidden;box-shadow:0 0 15px #0044aa;transition:transform 0.3s ease;}
+.album img{width:100%;height:100%;object-fit:cover;}
+.album:hover{transform:scale(1.05);box-shadow:0 0 25px #66b2ff;}
+form{margin-top:50px;padding:25px;border-radius:15px;background:rgba(15,0,10,0.6);border:2px solid #9c9c9c;box-shadow:0 0 20px #444;}
+input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:none;background:rgba(255,255,255,0.1);color:#ffd8a6;font-size:16px;}
+button{padding:12px 20px;background:#ff0044;border:none;border-radius:8px;cursor:pointer;color:white;font-weight:bold;box-shadow:0 0 15px #ff0044;font-size:17px;}
+body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;background-image:url("https://i.pinimg.com/originals/46/42/63/464263de643c1a1be401ac887a8e2de9.gif");background-size:100px 100px;opacity:0.2;z-index:0;}
+h2{margin-top:50px;color:#7ab6ff;text-align:center;font-style:italic;}
+img[usemap]{width:600px;height:auto;display:block;margin:0 auto;}
+#btnConfig {position: fixed;top: 20px;right: 20px;width: 60px;height: 60px;cursor: pointer;z-index: 9999;}
+#panelOpiniones {position: fixed;top: 0;right: -400px;width: 350px;height: 100%;background: rgba(0,0,0,0.95);box-shadow: -5px 0 15px #000;padding: 20px;transition: 0.4s;z-index: 9998;color: white;overflow-y: auto;}
+#panelOpiniones h2 {text-align: center;color: #7ab6ff;}
+.opinion-item {background: rgba(255,255,255,0.1);padding: 12px;border-radius: 10px;margin-top: 10px;color: #ffd8a6;}
+</style>
+</head>
+<body>
+
+<img id="btnConfig" src="https://i.pinimg.com/originals/62/d2/91/62d291311b142c5185f3891fa744f28c.jpg">
+
+<div class="contenedor-principal">
+<div class="top-section">
+<img class="logo" src="https://i.pinimg.com/236x/2e/ba/33/2eba33e16738f970e637e364c6e1cefd.jpg">
+<img class="imagen-abajo-nombre" src="logojr.png">
+<h1 class="titulo-neon">HISTORIA</h1>
+<img class="gif-movimiento" src="https://lastfm.freetls.fastly.net/i/u/300x300/a7d5139bc6ef0cb6ea3710387a3ce64e.jpg">
+</div>
+
+<div class="contenedor">
+
+<p>Junior H, cuyo nombre real es Antonio Herrera Pérez, nació el 23 de abril de 2001 en San Juan de Cerano, Guanajuato. Desde muy pequeño mostró gusto por la música y comenzó a escribir canciones a los 12 años. Su vida cambió cuando se mudó a Utah, Estados Unidos, junto a su familia en su adolescencia. Allá trabajó en distintos empleos mientras aprendía guitarra viendo tutoriales en línea. Aunque al inicio le daba pena mostrar su talento, seguía componiendo en su tiempo libre. Con dedicación y práctica empezó a crear un estilo propio influenciado por el regional mexicano. La música se convirtió en su escape y en su forma de expresar lo que vivía día a día. Sin saberlo, esas primeras composiciones serían el inicio de su carrera.</p>
+
+<p>Su salto a la fama comenzó cuando decidió subir sus canciones a YouTube por primera vez. Lo hizo sin esperar demasiado, pero sus temas conectaron rápidamente con miles de jóvenes. En 2019 lanzó su álbum debut, Mi Vida en un Cigarro, que lo impulsó dentro de la escena de los corridos tumbados. Su voz melancólica, letras sinceras y sonidos fusionados entre corrido, trap y sierreño llamaron la atención del público. Pronto fue firmado por la disquera Rancho Humilde, lo que abrió aún más puertas en su carrera. Su estilo fresco y emotivo lo volvió una figura representativa del nuevo movimiento. A medida que crecían sus reproducciones, también aumentaban sus presentaciones y colaboraciones. Junior H comenzaba a consolidarse como un fenómeno musical.</p>
+
+<video class="video-local" controls>
+<source src="video-local.mp4" type="video/mp4">
+</video>
+
+<p>Con el tiempo, Junior H lanzó más proyectos que reforzaron su éxito, como Atrapado en un Sueño y Cruisin’ with Junior H. Sus canciones hablan de experiencias personales, amor, desahogo y sueños, lo que ha generado una conexión auténtica con su audiencia. Poco a poco se convirtió en uno de los artistas más influyentes del regional mexicano contemporáneo. Su historia de superación inspira a muchos jóvenes que ven en él un ejemplo de perseverancia. Hoy llena conciertos, encabeza listas de streaming y continúa expandiendo su estilo musical. A pesar del éxito, mantiene una esencia sencilla y cercana a sus raíces. Su trayectoria demuestra que los sueños pueden lograrse con dedicación y valentía. Si quieres, también puedo hacerte un resumen más corto o una versión para tarea escolar.</p>
+
+<div class="albumes">
+<div class="album"><img id="img2" src="https://i.scdn.co/image/ab67616d00001e029c076fb69a52578d6441d57e"></div>
+<div class="album"><img id="img3" src="https://akamai.sscdn.co/uploadfile/letras/albuns/4/6/1/4/2406531729104233.jpg"></div>
+<div class="album"><img id="img4" src="https://akamai.sscdn.co/uploadfile/letras/albuns/c/2/4/e/01674142550.jpg"></div>
+<div class="album"><img id="img5" src="https://i.scdn.co/image/ab67616d0000b273f3ba6742a35f111aaea1ca2f"></div>
+</div>
+
+<audio id="audio2"><source src="musica2.mp3" type="audio/mp3"></audio>
+<audio id="audio3"><source src="musica3.mp3" type="audio/mp3"></audio>
+<audio id="audio4"><source src="musica4.mp3" type="audio/mp3"></audio>
+<audio id="audio5"><source src="musica5.mp3" type="audio/mp3"></audio>
+
+<h2>Concierto CDMX 2025</h2>
+
+<img src="junior-h-cdmx.jpg" usemap="#mapa-junior" alt="Concierto Junior H CDMX">
+
+<map name="mapa-junior">
+<area shape="rect" coords="0,0,200,400" href="https://www.ticketmaster.com.mx/">
+<area shape="rect" coords="200,0,400,400" href="https://odm.com.mx/">
+<area shape="rect" coords="400,0,600,400" href="https://www.google.com/maps/">
+</map>
+
+<form id="formContacto">
+<h2>Contacto</h2>
+<label>Nombre:</label>
+<input id="nombre" type="text">
+<label>Email:</label>
+<input id="email" type="email">
+<label>Mensaje:</label>
+<textarea id="mensaje" rows="4"></textarea>
+<button type="button" onclick="enviarCorreo()">Enviar</button>
+</form>
+
+<!-- 🚀🚀🚀  TIENDA DE ROPA JUNIOR H  🚀🚀🚀 -->
+<h2 style="text-align:center; margin-top:60px; color:#7ab6ff;">Tienda Oficial de Ropa - Junior H</h2>
+
+<form action="mailto:tu-correo@gmail.com" method="post" enctype="text/plain"
+style="margin-top:30px; padding:25px; border-radius:15px; background:rgba(15,0,10,0.6); border:2px solid #9c9c9c; box-shadow:0 0 20px #444;">
+
+<label style="color:#ffd8a6;">Prenda principal (elige una):</label><br>
+<select name="Prenda" size="1" style="width:100%; padding:10px; border-radius:10px; background:rgba(255,255,255,0.1); color:#ffd8a6;">
+    <option value="Ninguno">Ninguno</option>
+    <option value="Playera Junior H Negra">Playera Junior H Negra</option>
+    <option value="Hoodie La Durango">Hoodie “La Durango”</option>
+    <option value="Sudadera Mi Vida En Un Cigarro">Sudadera MVEC</option>
+    <option value="Playera Logo JRH Dorada">Playera Logo JRH Dorada</option>
+</select>
+<p></p>
+
+<label style="color:#ffd8a6;">Accesorios (elige varios):</label><br>
+<select name="Accesorios" size="4" multiple
+style="width:100%; padding:10px; border-radius:10px; background:rgba(255,255,255,0.1); color:#ffd8a6;">
+    <option value="Ninguno">Ninguno</option>
+    <option value="Gorra Junior H">Gorra Junior H</option>
+    <option value="Pulsera Rancho Humilde">Pulsera Rancho Humilde</option>
+    <option value="Cadena Estilo JRH">Cadena Estilo JRH</option>
+    <option value="Anillo Plateado">Anillo Plateado</option>
+</select>
+<p></p>
+
+<label style="color:#ffd8a6;">Talla:</label><br>
+<select name="Talla" size="1"
+style="width:100%; padding:10px; border-radius:10px; background:rgba(255,255,255,0.1); color:#ffd8a6;">
+    <option value="Sin especificar">Sin especificar</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+<p></p>
+
+<input type="submit" value="Enviar pedido"
+style="padding:12px 20px; background:#ff0044; border:none; border-radius:8px; cursor:pointer; color:white; font-weight:bold; box-shadow:0 0 15px #ff0044; font-size:17px;">
+
+<input type="reset" value="Borrar"
+style="padding:12px 20px; background:#555; border:none; border-radius:8px; cursor:pointer; color:white; font-weight:bold; margin-left:10px;">
+</form>
+<!-- FIN DE LA TIENDA -->
+
+</div>
+</div>
+
+<div id="panelOpiniones">
+    <h2>Opiniones</h2>
+
+    <textarea id="nuevaOpinion" rows="4" placeholder="Escribe tu opinión..." style="width:100%; padding:10px; border-radius:10px; background:rgba(255,255,255,0.1); color:#ffd8a6; border:none;"></textarea>
+
+    <button onclick="guardarOpinion()" style="margin-top:10px; width:100%;">Agregar opinión</button>
+
+    <h3 style="margin-top:20px; color:#7ab6ff;">Opiniones guardadas</h3>
+
+    <button onclick="borrarOpiniones()" 
+    style="width:100%; background:#660000; margin-top:10px; box-shadow:0 0 10px #ff0000;">
+        Borrar todas las opiniones
+    </button>
+
+    <div id="listaOpiniones"></div>
+</div>
+
+<script>
+const imagenes=[document.getElementById("img2"),document.getElementById("img3"),document.getElementById("img4"),document.getElementById("img5")];
+const audios=[document.getElementById("audio2"),document.getElementById("audio3"),document.getElementById("audio4"),document.getElementById("audio5")];
+
+imagenes.forEach((img,index)=>{
+    img.addEventListener("click",()=>{
+        audios.forEach((audio,i)=>{
+            if(i!==index){
+                audio.pause();
+                audio.currentTime=0;
+                imagenes[i].style.opacity="1";
+            }
+        });
+
+        if(audios[index].paused){
+            audios[index].play();
+            img.style.opacity="0.6";
+        } else {
+            audios[index].pause();
+            audios[index].currentTime=0;
+            img.style.opacity="1";
+        }
+    });
+});
+
+function enviarCorreo(){
+    let nombre=document.getElementById("nombre").value;
+    let email=document.getElementById("email").value;
+    let mensaje=document.getElementById("mensaje").value;
+
+    let asunto=encodeURIComponent("Nuevo mensaje desde la página de Junior H");
+
+    let cuerpo=encodeURIComponent(
+        "Nombre: "+nombre+"\n"+
+        "Mensaje: "+mensaje
+    );
+
+    window.location.href=`mailto:${email}?subject=${asunto}&body=${cuerpo}`;
+}
+
+document.getElementById("btnConfig").onclick = () => {
+    const panel = document.getElementById("panelOpiniones");
+    panel.style.right = panel.style.right === "0px" ? "-400px" : "0px";
+};
+
+function cargarOpiniones() {
+    let opiniones = JSON.parse(localStorage.getItem("opiniones")) || [];
+    let lista = document.getElementById("listaOpiniones");
+    lista.innerHTML = "";
+
+    opiniones.forEach(op => {
+        let div = document.createElement("div");
+        div.className = "opinion-item";
+        div.textContent = op;
+        lista.appendChild(div);
+    });
+}
+
+function guardarOpinion() {
+    let texto = document.getElementById("nuevaOpinion").value.trim();
+    if (!texto) return alert("Escribe una opinión.");
+
+    let opiniones = JSON.parse(localStorage.getItem("opiniones")) || [];
+    opiniones.push(texto);
+
+    localStorage.setItem("opiniones", JSON.stringify(opiniones));
+
+    document.getElementById("nuevaOpinion").value = "";
+    cargarOpiniones();
+}
+
+function borrarOpiniones() {
+    if (!confirm("¿Seguro que quieres borrar todas las opiniones?")) return;
+
+    localStorage.removeItem("opiniones");
+    cargarOpiniones();
+}
+
+cargarOpiniones();
+</script>
+
+</body>
+</html>
